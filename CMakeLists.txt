@@ -3,4 +3,4 @@ project(Timer_Assignment)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Timer_Assignment main.cpp)
+add_executable(Timer_Assignment main.cpp ControllableThread.cpp ControllableThread.h)
