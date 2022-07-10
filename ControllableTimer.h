@@ -16,14 +16,12 @@ public:
 
     ~ControllableTimer();
 
-    template<typename Function>
-    void start(Function function);
+    void start(void (*function)());
 
     void stop();
 
     void set_interval(unsigned int interval);
 
-//    void set_timeout(int timeout);
 };
 
 

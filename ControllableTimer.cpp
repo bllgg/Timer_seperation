@@ -22,8 +22,7 @@ void ControllableTimer::set_interval(unsigned int intvl) {
     this->interval = intvl * 1000;
 }
 
-template<typename Function>
-void ControllableTimer::start(Function function) {
+void ControllableTimer::start(void (*function)()) {
     this->clear = false;
     std::thread t([=]() {
         while (true) {
