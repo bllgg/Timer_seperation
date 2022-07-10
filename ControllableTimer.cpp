@@ -6,7 +6,7 @@
 #include <thread>
 
 ControllableTimer::ControllableTimer() {
-    interval = 5;
+    interval = 5000;
     clear = false;
 }
 
