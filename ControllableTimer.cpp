@@ -34,14 +34,3 @@ void ControllableTimer::start(void (*function)()) {
     });
     t.detach();
 }
-
-//void ControllableTimer::setTimeout(auto function, int delay) {
-//    this->clear = false;
-//    std::thread t([=]() {
-//        if(this->clear) return;
-//        std::this_thread::sleep_for(std::chrono::milliseconds(delay*1000));
-//        if(this->clear) return;
-//        function();
-//    });
-//    t.detach();
-//}
